@@ -725,49 +725,204 @@ void compilebtn(int in) {
     {
     case 0: break;
     case 1: {
+        bool no_kooler = false;
 
-        std::vector<meshobj> colvec;
-
-        for (auto loag : objdb.msdb.MeshVec) {
-            if (loag.modificators == col_solid) {
-                colvec.push_back(loag);
+        if (!objdb.msdb.MeshVec.empty()) {
+            for (auto obd : objdb.msdb.MeshVec) {
+                if (obd.modificators == nav_walkable) {
+                    no_kooler = true;
+                }
+            }
+            if (!no_kooler) {
+                std::cout << "No walkable meshes! \n";
             }
         }
 
-        std::vector<Vector3> verticespoints;
+        if (no_kooler) {
 
-        for (auto goal : objdb.msdb.MeshVec) {
-            //std::cout << goal.modelmesh.vertexCount;
-            if (goal.modificators == col_walkable) {
-                Matrix normalMatrix = MatrixTranspose(MatrixInvert(goal.meshmatrix));
-                const Vector3 worldUp = { 0, 1, 0 };
-                for (int a = 0; a < goal.modelmesh.vertexCount; a++) {
+            std::vector<meshobj> colvec;
 
-                    Vector3 normal = {
-                         goal.modelmesh.normals[a * 3],     // X
-                         goal.modelmesh.normals[a * 3 + 1], // Y
-                         goal.modelmesh.normals[a * 3 + 2]  // Z
-                    };
-                    Vector3 worldNormal = TransformNormal(normal, goal.meshmatrix);
-                    worldNormal = Vector3Normalize(worldNormal);
-                    //change!
+            for (auto loag : objdb.msdb.MeshVec) {
+                if (loag.modificators == col_solid) {
+                    colvec.push_back(loag);
+                }
+            }
 
-                    // Проверка направления
-                    float dot = Vector3DotProduct(worldNormal, worldUp);
+            std::vector<Vector3> verticespoints;
 
-                    if (dot > 0.75) {
-                        Vector3 vertex = {
-                            goal.modelmesh.vertices[a * 3],
-                            goal.modelmesh.vertices[a * 3 + 1],
-                            goal.modelmesh.vertices[a * 3 + 2]
+            for (auto goal : objdb.msdb.MeshVec) {
+                //std::cout << goal.modelmesh.vertexCount;
+                if (goal.modificators == col_walkable) {
+                    Matrix normalMatrix = MatrixTranspose(MatrixInvert(goal.meshmatrix));
+                    const Vector3 worldUp = { 0, 1, 0 };
+                    for (int a = 0; a < goal.modelmesh.vertexCount; a++) {
+
+                        Vector3 normal = {
+                             goal.modelmesh.normals[a * 3],     // X
+                             goal.modelmesh.normals[a * 3 + 1], // Y
+                             goal.modelmesh.normals[a * 3 + 2]  // Z
                         };
-                        Vector3 worldVertex = Vector3Transform(vertex, goal.meshmatrix);
+                        Vector3 worldNormal = TransformNormal(normal, goal.meshmatrix);
+                        worldNormal = Vector3Normalize(worldNormal);
+                        //change!
 
+                        // Проверка направления
+                        float dot = Vector3DotProduct(worldNormal, worldUp);
+
+                        if (dot > 0.75) {
+
+                            Vector3 vertex = {
+                                goal.modelmesh.vertices[a * 3],
+                                goal.modelmesh.vertices[a * 3 + 1],
+                                goal.modelmesh.vertices[a * 3 + 2]
+                            };
+                            Vector3 worldVertex = Vector3Transform(vertex, goal.meshmatrix);
+                            /*
+                            bool iscolided = true;
+                            for (auto testing : colvec) {
+
+                                Vector3 worldvertef = worldVertex;
+                                worldvertef.y += fabs(testing.meshposition.y)+100;
+                                Ray raycheck = {worldVertex,worldvertef};
+                                if (GetRayCollisionMesh(raycheck, testing.modelmesh, testing.meshmatrix).hit) {
+                                    iscolided = false;
+                                }
+
+                            }
+                            */
+                            //   if (iscolided) {
+                            verticespoints.push_back(worldVertex);
+                            //std::cout << worldVertex.x << " " << worldVertex.y << " " << worldVertex.z << "\n";
+                            // }
+
+
+
+                        }
                     }
                 }
             }
-          }
+            std::cout << "\n";
 
+            float max_x = fabs(verticespoints[0].x);
+            float max_z = fabs(verticespoints[0].z);
+            float min_x = fabs(verticespoints[0].x);
+            float min_z = fabs(verticespoints[0].z);
+
+
+            float max_y = (verticespoints[0].y);
+            float min_y = (verticespoints[0].y);
+
+
+            for (auto findrad : verticespoints) {
+
+                if (findrad.x > max_x) {
+                    max_x = (findrad.x);
+                }
+                if (findrad.z > max_z) {
+                    max_z = (findrad.z);
+                }
+                if (findrad.x < min_x) {
+                    min_x = (findrad.x);
+                }
+                if (findrad.z < min_z) {
+                    min_z = (findrad.z);
+                }
+            }
+            
+            std::vector<std::vector<navvec>> xandzvecs;
+            for (float x = min_x; x < max_x; x = x + mesh_toc) {
+                std::vector<navvec> zvec;
+                for (float z = (min_z); z < max_z; z = z + mesh_toc) {
+
+                    Ray raychock;
+                    Ray rayup;
+                   
+                    raychock.position.x = x;
+                    raychock.position.z = z;
+                    raychock.position.y = max_y+100;
+
+                    raychock.direction.x = 0;
+                    raychock.direction.z = 0;
+                    raychock.direction.y = -1;
+
+                    rayup.position.x = x;
+                    rayup.position.z = z;
+                    rayup.position.y = -1;
+
+                    rayup.direction.x = 0;
+                    rayup.direction.z = 0;
+                    rayup.direction.y = 1;
+
+                    bool solid = false;
+                    bool walk = false;
+                    RayCollision los;
+
+                    for (auto co : objdb.msdb.MeshVec) {
+                        //Проверяем что не затронули.
+                        if (co.modificators == col_walkable) {
+                            los = GetRayCollisionMesh(raychock, co.modelmesh, co.meshmatrix);
+                            if (los.hit) {
+                                walk = true;
+                                for (auto cols : colvec) {
+                                    if (cols.modificators == col_solid) {
+                                        RayCollision lost = GetRayCollisionMesh(rayup, cols.modelmesh, cols.meshmatrix);
+                                        if (lost.hit) {
+                                            solid = true;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    if (solid) {
+                        navvec s;
+                        s.navec3 = { x,max_y,z };
+                        s.mod = nav_solid;
+                        zvec.push_back(s);
+                    }
+                    else if (walk) {
+                        navvec s;
+                        s.navec3 = { x,max_y-los.distance,z };
+                        s.mod = nav_walkable;
+                        zvec.push_back(s);
+                    }
+                    else {
+                        navvec s;
+                        s.navec3 = { x,0,z };
+                        s.mod = nav_no_objects;
+                        zvec.push_back(s);
+                    }
+
+
+                }
+                xandzvecs.push_back(zvec);
+            }
+
+            for (auto la : xandzvecs) {
+                for (auto lo : la) {
+                    if (lo.mod == nav_walkable) {
+                        //SetColor(32);
+                        std::cout << lo.mod << " ";
+                        //ResetColor;
+                    }
+                    if (lo.mod == nav_solid) {
+                        //SetColor(31);
+                        std::cout << lo.mod << " ";
+                       // ResetColor;
+                    }
+                    if (lo.mod == nav_no_objects) {
+                        std::cout << lo.mod << " ";
+                    }
+                }
+                std::cout << "\n";
+            }
+            std::cout << "\n";
+            std::cout << "\n";
+
+
+        }
     }
           break;
 
@@ -1943,11 +2098,16 @@ int main() {
                     }
                 }
 
+                GuiPanel({ 1072, 248, 200, 200 }, NULL);
+                texturePressed = GuiButton({ 1072, 448, 200, 16 }, "Texture");
+                if (texturePressed) {
+                    TexturechooserActive = true;
+                }
 
 
                 choser_mod_mesh = objdb.msdb.MeshVec[objdb.getmeshobj(ObjListActive)].modificators;
                 if (GuiDropdownBox({ 1080,632,120,10 }, "No colision;Solid;Walkable", &choser_mod_mesh, choser_mod_bool_mesh)) {
-                    choser_mod_bool = !choser_mod_bool;
+                    choser_mod_bool_mesh = !choser_mod_bool_mesh;
                     if (!choser_mod_bool) {
                         choser_mod = objdb.msdb.MeshVec[objdb.getmeshobj(ObjListActive)].modificators = choser_mod_mesh;
                     }
@@ -1955,11 +2115,6 @@ int main() {
 
                 //                    GuiLabel({ 1080, 208, 120, 24 }, xtype.c_str());
 
-                GuiPanel({ 1072, 248, 200, 200 }, NULL);
-                texturePressed = GuiButton({ 1072, 448, 200, 16 }, "Texture");
-                if (texturePressed) {
-                    TexturechooserActive = true;
-                }
                 /*
                 switch (meshthingy.modificators)
                 {

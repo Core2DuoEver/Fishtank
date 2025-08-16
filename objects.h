@@ -228,7 +228,7 @@ public:
 	
 	//std::string texturepathnam = "textures//def.png";
 
-	int modificators; //Для дополнительных свойств.
+	int modificators =0; //Для дополнительных свойств.
 
 	bool active = false;
 	//10 - Загружена.
@@ -264,7 +264,7 @@ public:
 
 	std::string path;
 
-	int modificators; //Для дополнительных свойств.
+	int modificators = 0; //Для дополнительных свойств.
 	std::string commentary; //Для комментариев и другого мусора.
 
 	std::string name = "Model";
@@ -284,8 +284,28 @@ public:
 	int indexnamed;
 	int namindex;
 	int type;
+	//New thing?
 };
 
+enum NavMod {
+	nav_no_objects = 0,
+	nav_solid = 1,
+	nav_walkable = 2
+
+};
+
+class navvec {
+public:
+	Vector3 navec3;
+	Vector3 angle;
+	int effects;
+	int mod = -1;
+};
+
+class Navmesh {
+public:
+	std::vector<navvec> navmesh;
+};
 
 enum ObjectsDB {
 	obj_mesh = 1,

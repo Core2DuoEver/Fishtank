@@ -1,0 +1,3 @@
+C:\Users\user\source\repos\Fishtank\Fishtank\x64\Debug\raylib.dll
+C:\Users\user\source\repos\Fishtank\Fishtank\x64\Debug\glfw3.dll
+C:\Users\user\source\repos\Fishtank\Fishtank\Fishtank\x64\Debug\Fishtank.vcxproj.Up2Date

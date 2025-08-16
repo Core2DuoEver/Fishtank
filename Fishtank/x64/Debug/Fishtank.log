@@ -1,0 +1,59 @@
+﻿  main_tank.cpp
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(1,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(5,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(6,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(9,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\vcpkg\installed\x64-windows\include\raygui.h(2654,46): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(13,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(14,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(15,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(16,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(17,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(4,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(5,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(7,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(8,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(9,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(322,148): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(329,148): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(347,149): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(347,123): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(355,149): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(355,123): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(363,149): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(363,123): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(371,149): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(371,123): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(139,1): warning C4715: objectdatabase::get_real_id: значение возвращается не при всех путях выполнения
+  Fishtank.vcxproj -> C:\Users\user\source\repos\Fishtank\Fishtank\x64\Debug\Fishtank.exe
+  "pwsh.exe" не является внутренней или внешней
+  командой, исполняемой программой или пакетным файлом.

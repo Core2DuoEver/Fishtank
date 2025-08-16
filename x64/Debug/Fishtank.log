@@ -1,0 +1,120 @@
+﻿  main_tank.cpp
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(1,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(5,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(6,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(7,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(11,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\vcpkg\installed\x64-windows\include\raygui.h(2654,46): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(15,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(16,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(18,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(19,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(20,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(21,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(22,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(23,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\Bait.h(39,23): warning C4305: инициализация: усечение из "double" в "float"
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(3,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(4,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(5,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(7,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(8,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(9,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(11,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(84,30): warning C4018: <: несоответствие типов со знаком и без знака
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(478,42): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(523,42): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(480,12): warning C4101: matcool: неиспользованная локальная переменная
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(525,12): warning C4101: matcool: неиспользованная локальная переменная
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(576,40): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(578,10): warning C4101: matcool: неиспользованная локальная переменная
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(633,40): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "main_tank.cpp")
+  
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(197,25): warning C4244: инициализация: преобразование "zip_int64_t" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(240,28): warning C4244: инициализация: преобразование "zip_int64_t" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(245,38): warning C4244: =: преобразование "zip_int64_t" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(283,28): warning C4244: инициализация: преобразование "zip_int64_t" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(294,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(315,24): warning C4244: инициализация: преобразование "zip_int64_t" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2173,140): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2180,140): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2199,141): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2199,115): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2207,141): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2207,115): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2215,141): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2215,115): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2223,141): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2223,115): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2274,161): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2274,139): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2282,161): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2282,139): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2290,161): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2290,139): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2308,180): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2316,180): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2324,180): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\main_tank.cpp(2351,116): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(368,1): warning C4715: objectdatabase::getmeshobj: значение возвращается не при всех путях выполнения
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(380,1): warning C4715: objectdatabase::getmodelobj: значение возвращается не при всех путях выполнения
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(392,1): warning C4715: objectdatabase::getnamemesh: значение возвращается не при всех путях выполнения
+C:\Users\user\source\repos\Fishtank\Fishtank\objects.h(404,1): warning C4715: objectdatabase::getnamemodel: значение возвращается не при всех путях выполнения
+  Fishtank.vcxproj -> C:\Users\user\source\repos\Fishtank\x64\Debug\Fishtank.exe
+  "pwsh.exe" не является внутренней или внешней
+  командой, исполняемой программой или пакетным файлом.

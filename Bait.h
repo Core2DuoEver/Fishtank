@@ -35,3 +35,5 @@ extern int screenHeight = 720;
 extern std::string window_name = "Fishtank";
 
 extern Texture default_texture; 
+
+extern float mesh_toc = 0.1;
