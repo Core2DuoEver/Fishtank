@@ -1,3 +1,4 @@
+
 #include "Bait.h";
 #include "graphical.h"
 #include "objects.h";
@@ -17,6 +18,7 @@ int MaterialDropActive = 0;
 
 int ObjListScrollIndex = 0;
 int ObjListActive = 0;
+
 bool MeshAddBtnPressed = false;
 bool EntAddBtnPressed = false;
 bool MdlAddBtnPressed = false;
@@ -29,6 +31,7 @@ bool ConeMeshBtnPressed = false;
 bool TorusMeshBtnPressed = false;
 bool KnotMeshBtnPressed = false;
 bool HalfSphereBtnPressed = false;
+
 
 bool xtextboxbool = false;
 bool ytextboxbool = false;
@@ -127,20 +130,6 @@ bool chosen_comp_bool = false;
 
 Material mat_new;
 std::vector<Texture2D> mat_materials;
-
-BoundingBox addvectorbox(BoundingBox in, Vector3 toadd) {
-
-    return(BoundingBox{Vector3Add(in.min, toadd), Vector3Add(in.max, toadd)});
-
-}
-BoundingBox rotatebox(BoundingBox in, Vector3 rotvec, float angle) {
-
-    return(BoundingBox{Vector3RotateByAxisAngle(in.min,rotvec,angle), Vector3RotateByAxisAngle(in.max,rotvec,angle)});
-
-}
-
-
-
 
  void MeshAddBtn(){
  }
@@ -830,9 +819,9 @@ void compilebtn(int in) {
             }
             
             std::vector<std::vector<navvec>> xandzvecs;
-            for (float x = min_x; x < max_x; x = x + mesh_toc) {
+            for (float x = min_x; x < max_x; x = x + colision_precision) {
                 std::vector<navvec> zvec;
-                for (float z = (min_z); z < max_z; z = z + mesh_toc) {
+                for (float z = (min_z); z < max_z; z = z + colision_precision) {
 
                     Ray raychock;
                     Ray rayup;
@@ -936,10 +925,10 @@ void compilebtn(int in) {
     }
 }
 
-int main() {
+int notmain() {
 
 
-    InitWindow(screenWidth, screenHeight, window_name.c_str());
+    InitWindow(screen_width, screen_height, window_name.c_str());
     RenderTexture DevScreen = LoadRenderTexture(800, 600);
     RenderTexture PreviewScreen = LoadRenderTexture(200, 200);
 
@@ -994,6 +983,9 @@ int main() {
 
    // objdb.addmodel(LoadModel("models//gnome.obj"),"Gnome");
 
+
+
+
     SetTargetFPS(60);
     //--------------------------------------------------------------------------------------
     // Main game loop
@@ -1001,6 +993,8 @@ int main() {
     {
         //Управление камерой. Контроль этого
         
+
+
         if (IsKeyPressed(KEY_END) || lockthemouse) { //Проверяем, нажата ли ЛКМ
             if ((CheckCollisionPointRec(GetMousePosition(), panelrect)) || lockthemouse) { //В зоне //Или булинг.
                 //  DisableCursor();
@@ -1065,6 +1059,9 @@ int main() {
         }
 
         EndMode3D(); //Заканчиваем с 3д
+
+
+
         if (((meshactive|| mdlactive) && (ObjListActive != -1))) {
             if (IsKeyDown(KEY_X)) {
                 if (IsKeyDown(KEY_LEFT_SHIFT)) {

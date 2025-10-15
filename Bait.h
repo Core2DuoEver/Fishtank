@@ -1,18 +1,17 @@
 #pragma once
 
-//Основные библиотеки.
+//Raysan libs.
 
-#include "raylib.h"; //Нужна для отображения графики Zlib
-#include "raymath.h"; //Нужна для преобразований матрицы.
-#include "rlgl.h"; //НИзкоуровневая хуйня
-
+#include "raylib.h"; //Main Graphic lib - Zlib
+#include "raymath.h"; //Needed for Matrices math
+#include "rlgl.h";  //Needed for additional low-level OpenGL work.
 
 #define RAYGUI_IMPLEMENTATION
-#include "raygui.h"; //Нужна для графического интерфейса. 
+#include "raygui.h"; //Main gui lib.
 
-//Допы
+//Standart libs
 
-#include <cstdlib>;
+#include <cstdlib>; 
 #include <string>;
 #include <cstring>
 #include <iostream>;
@@ -25,15 +24,17 @@
 
 namespace fs = boost::filesystem;
 
-//Писанина
+//define's
 
-//Переменные 
+#define standart_screen_width 1280
+#define standart_screen_height 720
 
-extern int screenWidth = 1280;
-extern int screenHeight = 720;
+#define minimal_resolution_width 640
+#define minimal_resolution_height 480
 
-extern std::string window_name = "Fishtank";
+#define maximum_resolution_width 7680
+#define maximum_resolution_height 4320
 
-extern Texture default_texture; 
+#define window_name "Fishtank"
 
-extern float mesh_toc = 0.1;
+#define target_fps 60

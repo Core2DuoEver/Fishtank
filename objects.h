@@ -10,281 +10,165 @@
 
 #include <fstream>;
 
-/*
-class materialplus {
+class material_plus { //Refactored!
 public:
-	Material mat;
-	std::string name;
-	std::string path;
+	Material mat_main;
+	std::string mat_path;
+	std::string mat_name;
+	Texture mat_preview;
 };
-class materialdb {
+class material_database {
 public:
-	std::vector<materialplus> matdb;
-	std::vector<materialplus> active;
-	std::vector<std::vector<materialplus>> matpages;
-	std::string materialspath = "textures//";
-	void initdb() {
-		FilePathList fom;
-		fom = LoadDirectoryFiles(materialspath.c_str());
-		//fom = LoadDirectoryFilesEx(materialspath.c_str(), ".png", false);
-		if (fom.capacity != 0) {
+	std::vector<material_plus> material_vector;
 
-			for (auto lol : matdb) {
-				UnloadMaterial(lol.mat);
-			}
-			matdb.clear();
+	void database_init() {
+			FilePathList material_paths = LoadDirectoryFiles("materials\\"); //fomo
+			for (int path_index = 0; path_index < material_paths.capacity; path_index++) {  //poing
+				if (IsFileExtension(material_paths.paths[path_index], ".Folder")) {
 
-			for (int poing = 0; poing < fom.capacity; poing++) {
-				if (IsFileExtension(fom.paths[poing], ".png")) {
-					materialplus pus;
-					Image flipper;
-					pus.mat = LoadMaterialDefault();
-					flipper = LoadImage(fom.paths[poing]);
-					//ImageFlipHorizontal(&flipper);
-					//ImageFlipVertical(&flipper);
-					//ImageRotate(&flipper, 180);
+					material_plus material_temp; //newone
+
+					material_temp.mat_main = LoadMaterialDefault(); 
+					material_temp.mat_path = material_paths.paths[path_index];
+					material_temp.mat_name = GetFileNameWithoutExt(material_paths.paths[path_index]);
 					
-					pus.path = (fom.paths[poing]);
-					pus.name = GetFileNameWithoutExt(fom.paths[poing]);
-					pus.mat.maps->texture = LoadTextureFromImage(flipper);
-					
-					UnloadImage(flipper);
-
-					matdb.push_back(pus);
-				}
-			}
-		}
-	}
-	void addtexture(std::string name) {
-		
-	}
-	void addshader() {
-
-	}
-	void addparam() {
-
-	}
-};
-*/
-class matplus {
-public:
-	std::string path;
-	std::string name;
-	Material mat;
-	Texture preview;
-};
-class materialdb {
-public:
-	std::vector<matplus> db;
-
-	bool is_init = false;
-
-	void intdb() {
-			auto fomo = LoadDirectoryFiles("materials\\");
-			for (int poing = 0; poing < fomo.capacity; poing++) {
-				if (IsFileExtension(fomo.paths[poing], ".Folder")) {
-					matplus newone;
-					newone.mat = LoadMaterialDefault();
-					newone.path = fomo.paths[poing];
-					newone.name = GetFileNameWithoutExt(fomo.paths[poing]);
-					
-					auto fumo = LoadDirectoryFiles(fomo.paths[poing]);
+					FilePathList material_paths = LoadDirectoryFiles(material_paths.paths[path_index]); //fumo
 
 						/*
 						    MATERIAL_MAP_ALBEDO = 0,        // Albedo material (same as: MATERIAL_MAP_DIFFUSE)
-    MATERIAL_MAP_METALNESS,         // Metalness material (same as: MATERIAL_MAP_SPECULAR)
-    MATERIAL_MAP_NORMAL,            // Normal material
-    MATERIAL_MAP_ROUGHNESS,         // Roughness material
-    MATERIAL_MAP_OCCLUSION,         // Ambient occlusion material
-    MATERIAL_MAP_EMISSION,          // Emission material
-    MATERIAL_MAP_HEIGHT,            // Heightmap material
-    MATERIAL_MAP_CUBEMAP,           // Cubemap material (NOTE: Uses GL_TEXTURE_CUBE_MAP)
-    MATERIAL_MAP_IRRADIANCE,        // Irradiance material (NOTE: Uses GL_TEXTURE_CUBE_MAP)
-    MATERIAL_MAP_PREFILTER,         // Prefilter material (NOTE: Uses GL_TEXTURE_CUBE_MAP)
-    MATERIAL_MAP_BRDF     
+							MATERIAL_MAP_METALNESS,         // Metalness material (same as: MATERIAL_MAP_SPECULAR)
+							MATERIAL_MAP_NORMAL,            // Normal material
+							MATERIAL_MAP_ROUGHNESS,         // Roughness material
+							MATERIAL_MAP_OCCLUSION,         // Ambient occlusion material
+							MATERIAL_MAP_EMISSION,          // Emission material
+							MATERIAL_MAP_HEIGHT,            // Heightmap material
+							MATERIAL_MAP_CUBEMAP,           // Cubemap material (NOTE: Uses GL_TEXTURE_CUBE_MAP)
+							MATERIAL_MAP_IRRADIANCE,        // Irradiance material (NOTE: Uses GL_TEXTURE_CUBE_MAP)
+							MATERIAL_MAP_PREFILTER,         // Prefilter material (NOTE: Uses GL_TEXTURE_CUBE_MAP)
+							MATERIAL_MAP_BRDF     
 						*/
 
-					std::vector<std::string> namesf = { "ALBEDO.png","METALNESS.png","NORMAL.png","ROUGHNESS.png","OCCLUSION.png","EMISSION.png","HEIGHT.png","CUBEMAP.png","IRRIDIANCE.png","PREFILTER.png","BRDF.png" };
-
-					//if (hsh(std::string(GetFileName(fumo.paths[poing]))) == strds[0]) {
-
+					std::vector<std::string> material_textures = { "ALBEDO.png","METALNESS.png","NORMAL.png","ROUGHNESS.png","OCCLUSION.png","EMISSION.png","HEIGHT.png","CUBEMAP.png","IRRIDIANCE.png","PREFILTER.png","BRDF.png" };
 						
-					for (int ind = 0; ind <= 10; ind++) {
-						std::string tmp_name = fomo.paths[poing] + std::string("//") + namesf[ind];
-						//Texture2D tmp_txt = LoadTexture(tmp_name.c_str());
+					for (short unsigned int material_texture_index = 0; material_texture_index < material_textures.size(); material_texture_index++) { //was  <= 10 before, now practically 11
 
-						//if (tmp_txt.format != NULL) {
+						std::string material_path_name = material_paths.paths[path_index] + std::string("//") + material_textures[material_texture_index];
 
-						SetMaterialTexture(&newone.mat, ind, LoadTexture(tmp_name.c_str()));
+						SetMaterialTexture(&material_temp.mat_main, material_texture_index, LoadTexture(material_path_name.c_str()));
 
-						//}
-
-						}
+					}
 					
+					std::string material_binary_file_path = material_paths.paths[path_index] + std::string("//mat.mati"); //lofff
 
-					//}
-				
-			//		std::ifstream binaryfile((fumo.paths[poing] + std::string("mat.mati")).c_str(), std::ios::binary);
-					auto lofff = fomo.paths[poing] + std::string("//mat.mati");
-					std::ifstream binaryfile(lofff.c_str(), std::ios::binary);
-					binaryfile.read(reinterpret_cast<char*>(&newone.mat.maps->value), sizeof(newone.mat.maps->value));
+					std::ifstream binaryfile(material_binary_file_path.c_str(), std::ios::binary);
 
-					short int togo;
+					binaryfile.read(reinterpret_cast<char*>(&material_temp.mat_main.maps->value), sizeof(material_temp.mat_main.maps->value));
 
-					binaryfile.read(reinterpret_cast<char*>(&togo), sizeof(togo));
-		//			binaryfile.read(reinterpret_cast<char*>(&togo), sizeof(togo));
+					short int shader_detector_value;
 
-					if (togo == 1) {
-						std::string shd;
+					binaryfile.read(reinterpret_cast<char*>(&shader_detector_value), sizeof(shader_detector_value));
 
-						size_t pathtxt_size; //Загружаем размер путя текстур.
-						binaryfile.read(reinterpret_cast<char*>(&pathtxt_size), sizeof(pathtxt_size)); //Читаем размерчик.
-						shd.resize(pathtxt_size);
-						binaryfile.read(&shd[0], pathtxt_size);
+					if (shader_detector_value == 1) {
+						std::string material_shader_path;
 
-						newone.mat.shader = LoadShader(NULL, shd.c_str());
-					}
-					if (togo != -1) {
-						//lol no shader
+						size_t material_shader_path_size; //Загружаем размер путя текстур.
+						binaryfile.read(reinterpret_cast<char*>(&material_shader_path_size), sizeof(material_shader_path_size)); //Читаем размерчик.
+						material_shader_path.resize(material_shader_path_size);
+						binaryfile.read(&material_shader_path[0], material_shader_path_size);
+
+						material_temp.mat_main.shader = LoadShader(NULL, material_shader_path.c_str());
 					}
 
+					std::string tmp2_name = material_paths.paths[path_index] + std::string("//PREVIEW.png");
 
-					//                    matinfo.write(reinterpret_cast<char*>(&mat_new.maps->value), sizeof(mat_new.maps->value)); //Сохраняем два!
-// short int fuckoff = 1;
-//					matinfo.write(reinterpret_cast<char*>(&fuckoff), sizeof(fuckoff)); //Сохраняем тот факт что шейдера есть.
+					material_temp.mat_preview = LoadTexture(tmp2_name.c_str());
 
-					// matinfo.write(reinterpret_cast<char*>(&pathsize), sizeof(pathsize)); //Сохраняем раз!
-					//matinfo.write(shadernam.c_str(), pathsize);
-
-					std::string tmp2_name = fomo.paths[poing] + std::string("//PREVIEW.png");
-
-					newone.preview = LoadTexture(tmp2_name.c_str());
-
-					db.push_back(newone);
+					material_vector.push_back(material_temp);
 
 					binaryfile.close();
 
 				}
 			}
-			is_init = true;
-
 		}
 
 
-	void redb() {
-		for (auto clr : db) {
-			UnloadMaterial(clr.mat);
-			UnloadTexture(clr.preview);
+	void database_re_init() {
+		for (auto vector_texture_unload : material_vector) {
+			UnloadMaterial(vector_texture_unload.mat_main);
+			UnloadTexture(vector_texture_unload.mat_preview);
 		}
-		db.clear();
-		is_init = false;
+		material_vector.clear(); 
 	}
 };
 
-class savemesh {
-public:
-	std::string pathmdl;
-	std::string pathtxt;
-	std::string name;
+class meshobj { //Obj. Refactored!
+private:
+	Matrix mesh_matrix; //Positional matrix of the Mesh
 
-	Color savecolor;
-
-	Matrix meshmatrix; //Матрица 4х4 для позиции 
-
-	Vector3 meshposition; //Названия говорят за себя.
-	Vector3 meshrotaxis;
-	Vector3 meshscale;
-
-	int modificator;
-	int uniqueid;
-	int id; //Тип мэша.
-};
-class savemodel {
-public:
-	std::string path;
-	std::string name;
-
-	Vector3 modelposition; //Названия говорят за себя.
-	Vector3 modelrotaxis;
-	Vector3 modelscale;
-
-	int uniqueid;
-	int modificator;
-
-	Matrix matrixmodel;
-};
-
-
-class meshobj { //Обьект мэша.
 public:
 	
-	Mesh modelmesh; //Модель
-	Mesh colisionmesh; //Модель колизии (если есть)
+	Mesh mesh_model; //Model
+	Mesh mesh_colision_mesh; //Colision model
 	
-	matplus matpl;
-
-	Material meshmaterial; //Материал
-	Matrix meshmatrix; //Матрица 4х4 для позиции транспоцизззицизццидиалолаоплаопл
+	material_plus mesh_material; //Material
 	
-	//std::string texturepathnam = "textures//def.png";
-
-	int modificators =0; //Для дополнительных свойств.
-
-	bool active = false;
-	//10 - Загружена.
-	//
-	//
-	std::string commentary; //Для комментариев и другого мусора.
+	std::vector<short unsigned int> object_modificators; //Possible modifcators
+    
 	std::string name = "Mesh";
 
-	int uniqueid;
+	int object_id; //Object id 
 
-	Vector3 meshposition; //Названия говорят за себя.
-	Vector3 meshrotaxis;
-	Vector3 meshscale;
-
-	int id; //Тип мэша.
-
+	Matrix get_matrix() {
+		return mesh_matrix;
+	}
+	Vector3 get_position() {
+		return{};
+	}
+	Vector3 get_scale() {
+		return{};
+	}
+	Vector3 get_angle() {
+		return{};
+	}
 };
 
-class modelobj { //Обьект мэша.
+class modelobj { //Obj. 
+private:
+	Matrix model_matrix; //Positional matrix
+
 public:
-	Model modelmdl; //Модуль ага.
-	Mesh colisionmesh; //Модель колизии (если есть)
+	Model model_mdl; //Model
+	Mesh model_colision_mesh; //Colision model
 
-	//short int id; //Тип модели.
+	std::vector<short unsigned int> object_modificators; //Possible modifcators
 
-	int uniqueid;
-
-	Vector3 modelposition; //Названия говорят за себя.
-	Vector3 modelrotaxis;
-	Vector3 modelscale;
-	
-	Matrix matrixmodel;
-
-	std::string path;
-
-	int modificators = 0; //Для дополнительных свойств.
-	std::string commentary; //Для комментариев и другого мусора.
+	std::string path; //Path of the model. Those are stored in models//
 
 	std::string name = "Model";
+
+	int object_id;
+
+	Matrix get_matrix() {
+		return model_matrix;
+	}
+	Vector3 get_position() {
+		return{};
+	}
+	Vector3 get_scale() {
+		return{};
+	}
+	Vector3 get_angle() {
+		return{};
+	}
+
 };
 
-class meshlist {
-public:
-	std::vector<meshobj> MeshVec; //Список мешей.
-};
-class mdllist {
-public:
-	std::vector<modelobj> MdlVec; //Список мешей.
-};
 class objnaming {
 public:
 	std::string name;
 	int indexnamed;
 	int namindex;
 	int type;
-	//New thing?
 };
 
 enum NavMod {
