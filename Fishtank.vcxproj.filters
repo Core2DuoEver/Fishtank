@@ -13,10 +13,25 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы заголовков\Classes">
+      <UniqueIdentifier>{e8d2a20c-9881-45e4-afe5-e0d748e86cc3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="new_main.cpp">
       <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="material_database.cpp">
+      <Filter>Файлы заголовков\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh_object.cpp">
+      <Filter>Файлы заголовков\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="model_object.cpp">
+      <Filter>Файлы заголовков\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="objects_database.cpp">
+      <Filter>Файлы заголовков\Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -26,11 +41,23 @@
     <ClInclude Include="Header.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="objects.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="graphical.h">
       <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="material_plus.h">
+      <Filter>Файлы заголовков\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="material_database.h">
+      <Filter>Файлы заголовков\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh_object.h">
+      <Filter>Файлы заголовков\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="model_object.h">
+      <Filter>Файлы заголовков\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="objects_database.h">
+      <Filter>Файлы заголовков\Classes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

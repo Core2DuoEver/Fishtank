@@ -128,13 +128,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="material_database.cpp" />
+    <ClCompile Include="mesh_object.cpp" />
+    <ClCompile Include="model_object.cpp" />
     <ClCompile Include="new_main.cpp" />
+    <ClCompile Include="objects_database.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bait.h" />
     <ClInclude Include="graphical.h" />
     <ClInclude Include="Header.h" />
-    <ClInclude Include="objects.h" />
+    <ClInclude Include="material_database.h" />
+    <ClInclude Include="material_plus.h" />
+    <ClInclude Include="mesh_object.h" />
+    <ClInclude Include="model_object.h" />
+    <ClInclude Include="objects_database.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

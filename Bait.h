@@ -26,15 +26,20 @@ namespace fs = boost::filesystem;
 
 //define's
 
-#define standart_screen_width 1280
-#define standart_screen_height 720
+#define STANDART_RESOLUTION_WIDTH 1280
+#define STANDART_RESOLUTION_HEIGHT 720
 
-#define minimal_resolution_width 640
-#define minimal_resolution_height 480
+#define MINIMUM_RESOLUTION_WIDTH 640
+#define MINIMUM_RESOLUTION_HEIGHT 480
 
-#define maximum_resolution_width 7680
-#define maximum_resolution_height 4320
+#define MAXIMUM_RESOLUTION_WIDTH 7680
+#define MAXIMUM_RESOLUTION_HEIGHT 4320
 
-#define window_name "Fishtank"
+#define WINDOW_NAME "Fishtank"
 
-#define target_fps 60
+#define TARGET_FPS 60
+//On initial launch OR entry vipe
+#define EMPTY_GUI_LIST "No entry"
+
+#define STANDART_MESH_NAME "Mesh"
+#define STANDART_MODEL_NAME "Model"
