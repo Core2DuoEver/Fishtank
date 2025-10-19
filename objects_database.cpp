@@ -51,7 +51,7 @@ objects_database::entry_object objects_database::get_entry_from_index(unsigned i
 			return list_index;
 		}
 	}
-	return{ 0,0,0,255 }; //Return a 0 with Uninit type.
+	return{NULL, NULL, NULL, 255}; //Return a 0 with Uninit type if it's not found.
 }
 
 mesh_object* objects_database::get_mesh_object(objects_database::entry_object id_entry) {
@@ -97,7 +97,15 @@ void objects_database::add_model_object(Model model_entry) {
 }
 
 void objects_database::remove_object(objects_database::entry_object entry_index) {
+	
 
+	reload_gui_list();
+}
+
+void objects_database::duplicate_object(objects_database::entry_object entry_index) {
+	
+
+	reload_gui_list();
 }
 
 objects_database::objects_database() {

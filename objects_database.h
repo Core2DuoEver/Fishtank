@@ -59,6 +59,9 @@ public:
 	//Container delete
 	void remove_object(entry_object entry_index); //Removes objects using entry objects.
 
+	//Container duplicate.
+	void duplicate_object(entry_object entry_index); //Duplicates object
+
 	objects_database(); //Constructor.
 };
 

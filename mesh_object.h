@@ -14,7 +14,11 @@ private:
 	material_plus mesh_material{}; //Material
 	
 	std::vector<short unsigned int> object_modificators{}; //Possible modifcators
-	
+
+	enum object_modifcators_types {
+		mod_duplicated = 1, mod_duplicate = 2
+	};
+
 	std::string name{};
 	
 	unsigned int object_id{}; //Object id

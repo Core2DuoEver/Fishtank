@@ -12,6 +12,10 @@ private:
 
 	std::vector<short unsigned int> object_modificators{}; //Possible modifcators
 
+	enum object_modifcators_types {
+		mod_duplicated = 1, mod_duplicate = 2
+	};
+
 	std::string path{}; //Path of the model. Those are stored in models//
 
 	std::string name{};

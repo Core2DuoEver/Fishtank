@@ -131,6 +131,7 @@
     <ClCompile Include="material_database.cpp" />
     <ClCompile Include="mesh_object.cpp" />
     <ClCompile Include="model_object.cpp" />
+    <ClCompile Include="modificator_object.cpp" />
     <ClCompile Include="new_main.cpp" />
     <ClCompile Include="objects_database.cpp" />
   </ItemGroup>
@@ -142,6 +143,7 @@
     <ClInclude Include="material_plus.h" />
     <ClInclude Include="mesh_object.h" />
     <ClInclude Include="model_object.h" />
+    <ClInclude Include="modificator_object.h" />
     <ClInclude Include="objects_database.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

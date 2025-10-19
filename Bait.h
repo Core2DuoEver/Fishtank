@@ -1,13 +1,6 @@
 #pragma once
 
-//Raysan libs.
 
-#include "raylib.h"; //Main Graphic lib - Zlib
-#include "raymath.h"; //Needed for Matrices math
-#include "rlgl.h";  //Needed for additional low-level OpenGL work.
-
-#define RAYGUI_IMPLEMENTATION
-#include "raygui.h"; //Main gui lib.
 
 //Standart libs
 
@@ -18,9 +11,20 @@
 #include <vector>;
 #include <string>;
 #include <fstream>;
+
+//Open-source libs
 #include "zip.h"; // BSD License
 #include "tinyfiledialogs/tinyfiledialogs.h"; //Zlib
 #include "boost/filesystem.hpp" //Boost license
+
+//Raysan libs.
+
+#include "raylib.h"; //Main Graphic lib - Zlib
+#include "raymath.h"; //Needed for Matrices math
+#include "rlgl.h";  //Needed for additional low-level OpenGL work.
+
+#define RAYGUI_IMPLEMENTATION
+#include "raygui.h"; //Main gui lib.
 
 namespace fs = boost::filesystem;
 
