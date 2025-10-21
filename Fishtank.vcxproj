@@ -128,6 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="base_object.cpp" />
     <ClCompile Include="material_database.cpp" />
     <ClCompile Include="mesh_object.cpp" />
     <ClCompile Include="model_object.cpp" />
@@ -137,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bait.h" />
+    <ClInclude Include="base_object.h" />
     <ClInclude Include="graphical.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="material_database.h" />
