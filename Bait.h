@@ -11,6 +11,7 @@
 #include <vector>;
 #include <string>;
 #include <fstream>;
+#include <algorithm>
 
 //Open-source libs
 #include "zip.h"; // BSD License

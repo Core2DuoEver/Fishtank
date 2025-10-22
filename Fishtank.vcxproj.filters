@@ -65,11 +65,14 @@
     <ClInclude Include="objects_database.h">
       <Filter>Файлы заголовков\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="modificator_object.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="base_object.h">
       <Filter>Файлы заголовков\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="modificator_object.h">
+      <Filter>Файлы заголовков\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="model_plus.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

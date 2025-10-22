@@ -18,11 +18,10 @@ private:
 
 	std::vector<object_mods> object_modificators{}; //Possible modifcators
 
+public:
 	enum object_modifcators_types {
 		mod_duplicated = 1, mod_duplicate = 2
 	};
-
-public:
 	void set_object_name(std::string name_in) {
 		name = name_in;
 	}
@@ -36,7 +35,7 @@ public:
 	Matrix get_object_matrix() {
 		return object_matrix;
 	}
-	std::string get_mesh_name() {
+	std::string get_object_name() {
 		return(name);
 	}
 	unsigned int get_object_id() {
@@ -44,8 +43,9 @@ public:
 	}
 
 	void add_modificator(object_mods modificator_in); //Adds modificator to the vector.
-	void remove_modificator(object_mods modificator_in); //Removes modificator to the vector.
+	void remove_modificator(short unsigned int modificator_type_in); //Removes modificator to the vector.
 	std::vector<object_mods> find_modificator(short unsigned int modificator_type_in); //Find modificator, if found, returns all found mods with that type.
+	bool find_exact_modificator(object_mods modificator_in); //Find modificator, if found, returns all found mods with that type.
 
 	Vector3 get_position();
 	Vector3 get_scale();

@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\objects_database.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|solutionrelative:objects_database.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\objects_database.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|solutionrelative:objects_database.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\base_object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|solutionrelative:base_object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\base_object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|solutionrelative:base_object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\mesh_object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -13,6 +25,17 @@
     {
       "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\mesh_object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|solutionrelative:mesh_object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\USERS\\CORE\\VCPKG\\INSTALLED\\X64-WINDOWS\\INCLUDE\\RAYGUI.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\model_object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|solutionrelative:model_object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\model_plus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|solutionrelative:model_plus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\material_plus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,23 +50,8 @@
       "RelativeMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|solutionrelative:Bait.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\objects_database.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|solutionrelative:objects_database.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\modificator_object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|solutionrelative:modificator_object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\model_object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|solutionrelative:model_object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\objects_database.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|solutionrelative:objects_database.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\USERS\\CORE\\VCPKG\\INSTALLED\\X64-WINDOWS\\INCLUDE\\RAYGUI.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E22CEBC3-DC2F-4237-BA9A-A14005C5D981}|Fishtank.vcxproj|C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\new_main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -64,17 +72,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Bait.h",
               "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\Bait.h",
               "RelativeDocumentMoniker": "Bait.h",
               "ToolTip": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\Bait.h",
               "RelativeToolTip": "Bait.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-10-07T13:23:19.832Z",
               "IsPinned": true,
@@ -82,20 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "objects_database.cpp",
-              "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\objects_database.cpp",
-              "RelativeDocumentMoniker": "objects_database.cpp",
-              "ToolTip": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\objects_database.cpp",
-              "RelativeToolTip": "objects_database.cpp",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-18T20:33:32.638Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "modificator_object.h",
               "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\modificator_object.h",
               "RelativeDocumentMoniker": "modificator_object.h",
@@ -103,11 +98,12 @@
               "RelativeToolTip": "modificator_object.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-19T21:42:54.472Z"
+              "WhenOpened": "2025-10-19T21:42:54.472Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "raygui.h",
               "DocumentMoniker": "C:\\Users\\Core\\vcpkg\\installed\\x64-windows\\include\\raygui.h",
               "RelativeDocumentMoniker": "..\\..\\..\\vcpkg\\installed\\x64-windows\\include\\raygui.h",
@@ -115,23 +111,38 @@
               "RelativeToolTip": "..\\..\\..\\vcpkg\\installed\\x64-windows\\include\\raygui.h",
               "ViewState": "AgIAAKcQAAAAAAAAAAAowLgQAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-19T12:31:37.084Z"
+              "WhenOpened": "2025-10-19T12:31:37.084Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
+              "Title": "objects_database.cpp",
+              "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\objects_database.cpp",
+              "RelativeDocumentMoniker": "objects_database.cpp",
+              "ToolTip": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\objects_database.cpp",
+              "RelativeToolTip": "objects_database.cpp",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-18T20:33:32.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "objects_database.h",
               "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\objects_database.h",
               "RelativeDocumentMoniker": "objects_database.h",
               "ToolTip": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\objects_database.h",
               "RelativeToolTip": "objects_database.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAowEMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-18T12:52:28.304Z"
+              "WhenOpened": "2025-10-18T12:52:28.304Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "material_plus.h",
               "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\material_plus.h",
               "RelativeDocumentMoniker": "material_plus.h",
@@ -144,71 +155,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "mesh_object.cpp",
-              "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\mesh_object.cpp",
-              "RelativeDocumentMoniker": "mesh_object.cpp",
-              "ToolTip": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\mesh_object.cpp",
-              "RelativeToolTip": "mesh_object.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-17T22:57:13.578Z",
+              "DocumentIndex": 8,
+              "Title": "model_plus.h",
+              "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\model_plus.h",
+              "RelativeDocumentMoniker": "model_plus.h",
+              "ToolTip": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\model_plus.h",
+              "RelativeToolTip": "model_plus.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-22T14:46:54.132Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "model_object.cpp",
               "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\model_object.cpp",
               "RelativeDocumentMoniker": "model_object.cpp",
               "ToolTip": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\model_object.cpp",
               "RelativeToolTip": "model_object.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-18T12:40:27.415Z"
+              "WhenOpened": "2025-10-18T12:40:27.415Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "model_object.h",
               "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\model_object.h",
               "RelativeDocumentMoniker": "model_object.h",
               "ToolTip": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\model_object.h",
               "RelativeToolTip": "model_object.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-10-18T12:37:06.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "base_object.h",
-              "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\base_object.h",
-              "RelativeDocumentMoniker": "base_object.h",
-              "ToolTip": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\base_object.h",
-              "RelativeToolTip": "base_object.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-20T20:45:48.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "mesh_object.h",
               "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\mesh_object.h",
               "RelativeDocumentMoniker": "mesh_object.h",
               "ToolTip": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\mesh_object.h",
               "RelativeToolTip": "mesh_object.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-10-17T22:57:00.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
+              "Title": "mesh_object.cpp",
+              "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\mesh_object.cpp",
+              "RelativeDocumentMoniker": "mesh_object.cpp",
+              "ToolTip": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\mesh_object.cpp",
+              "RelativeToolTip": "mesh_object.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-17T22:57:13.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "base_object.cpp",
+              "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\base_object.cpp",
+              "RelativeDocumentMoniker": "base_object.cpp",
+              "ToolTip": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\base_object.cpp",
+              "RelativeToolTip": "base_object.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-21T18:12:08.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "base_object.h",
+              "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\base_object.h",
+              "RelativeDocumentMoniker": "base_object.h",
+              "ToolTip": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\base_object.h",
+              "RelativeToolTip": "base_object.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-20T20:45:48.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "raymath.h",
               "DocumentMoniker": "C:\\Users\\Core\\vcpkg\\installed\\x64-windows\\include\\raymath.h",
               "RelativeDocumentMoniker": "..\\..\\..\\vcpkg\\installed\\x64-windows\\include\\raymath.h",
@@ -220,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "main_tank.cpp",
               "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\main_tank.cpp",
               "RelativeDocumentMoniker": "main_tank.cpp",
@@ -232,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "new_main.cpp",
               "DocumentMoniker": "C:\\Users\\Core\\Documents\\GitHub\\Fishtank\\new_main.cpp",
               "RelativeDocumentMoniker": "new_main.cpp",

@@ -14,12 +14,12 @@ void objects_database::reload_gui_list() {
 		//Resizing the vector for the worst possible outcome.
 
 		for (mesh_object mesh_id_seek : mesh_vector) {
-			list_vector[mesh_id_seek.get_object_id()].name = mesh_id_seek.get_mesh_name();
+			list_vector[mesh_id_seek.get_object_id()].name = mesh_id_seek.get_object_name();
 			list_vector[mesh_id_seek.get_object_id()].id = mesh_id_seek.get_object_id();
 			list_vector[mesh_id_seek.get_object_id()].type = OBJECT_MESH;
 		}
 		for (model_object model_id_seek : model_vector) {
-			list_vector[model_id_seek.get_object_id()].name = model_id_seek.get_model_name();
+			list_vector[model_id_seek.get_object_id()].name = model_id_seek.get_object_name();
 			list_vector[model_id_seek.get_object_id()].id = model_id_seek.get_object_id();
 			list_vector[model_id_seek.get_object_id()].type = OBJECT_MODEL;
 		}
@@ -55,55 +55,124 @@ objects_database::entry_object objects_database::get_entry_from_index(unsigned i
 }
 
 mesh_object* objects_database::get_mesh_object(objects_database::entry_object id_entry) {
-	
-	for (mesh_object& mesh_index : mesh_vector) {
-		if (mesh_index.get_object_id() == id_entry.id) {
-			return &mesh_index;
+	if (id_entry.type == OBJECT_MESH) {
+		for (mesh_object& mesh_index : mesh_vector) {
+			if (mesh_index.get_object_id() == id_entry.id) {
+				return &mesh_index;
+			}
 		}
 	}
-
-	return nullptr; //If not found.
+	return nullptr; //If not found OR is not a OBJECT_MESH
 }
 
 model_object* objects_database::get_model_object(objects_database::entry_object id_entry) {
-	for (model_object& model_index : model_vector) {
-		if (model_index.get_object_id() == id_entry.id) {
-			return &model_index;
+	if (id_entry.type == OBJECT_MODEL) {
+		for (model_object& model_index : model_vector) {
+			if (model_index.get_object_id() == id_entry.id) {
+				return &model_index;
+			}
 		}
 	}
-
-	return nullptr; //If not found.
+	return nullptr; //If not found OR is not a OBJECT_MODEL
 }
 
 void objects_database::add_mesh_object(Mesh mesh_entry) {
 	mesh_object object_add;
 	object_add.set_mesh_model(mesh_entry);
-	object_add.set_mesh_name(STANDART_MESH_NAME);
-	object_add.set_mesh_object_id(last_id);
+	object_add.set_object_name(STANDART_MESH_NAME);
+	object_add.set_object_id(last_id);
 	object_add.set_mesh_material(standart_mesh_texture);
+
+	mesh_vector.push_back(object_add);
 
 	last_id++; //Up the ID after adding the object.
 	reload_gui_list();
 }
 
-void objects_database::add_model_object(Model model_entry) {
+void objects_database::add_model_object(std::string path_in) {
 	model_object object_add;
-	object_add.set_model_mdl(model_entry);
-	object_add.set_model_name(STANDART_MODEL_NAME);
-	object_add.set_model_object_id(last_id);
+	object_add.set_model(path_in);
+	object_add.set_object_name(STANDART_MODEL_NAME);
+	object_add.set_object_id(last_id);
+
+	model_vector.push_back(object_add);
 
 	last_id++; //Up the ID after adding the object.
 	reload_gui_list();
 }
 
 void objects_database::remove_object(objects_database::entry_object entry_index) {
-	
+	switch (entry_index.type) {
+	case OBJECT_MESH: {
+		mesh_object* mesh_temp = get_mesh_object(entry_index);
+
+		//First. See if the object was duplicated or is a duplicate.
+
+	}
+					break;
+	case OBJECT_MODEL: {
+		model_object* model_temp = get_model_object(entry_index);
+
+		//First. See if the object was duplicated or is a duplicate.
+
+		auto vector_temp = model_temp->find_modificator(base_object::mod_duplicate); //Is it a duplicate?
+
+		bool original_exist = false;
+		bool copies_exist = false;
+
+		if (!vector_temp.empty()) {
+			//If it's not empty and there is something found. 
+			for (auto model_temp : model_vector) { //Does original exist.
+				if (model_temp.find_exact_modificator({base_object::mod_duplicated,int(entry_index.id)})) {
+					original_exist = true;
+				}
+			}
+		}
+
+
+	}
+					 break;
+	}
 
 	reload_gui_list();
 }
 
 void objects_database::duplicate_object(objects_database::entry_object entry_index) {
-	
+	switch (entry_index.type) {
+	case OBJECT_MESH: {
+		mesh_object* mesh_temp = get_mesh_object(entry_index);
+
+		mesh_object mesh_duplicate_temp = *mesh_temp;
+
+		mesh_duplicate_temp.add_modificator({ base_object::mod_duplicate, int(entry_index.id) });
+
+		mesh_duplicate_temp.set_object_id(last_id);
+
+		mesh_vector.push_back(mesh_duplicate_temp);
+
+		last_id++; //Up the ID after adding the object.
+
+		mesh_temp->add_modificator({ base_object::mod_duplicated,int(last_id) });
+
+	}
+					break;
+	case OBJECT_MODEL: {
+		model_object* model_temp = get_model_object(entry_index);
+
+		model_object model_duplicate_temp = *model_temp;
+
+		model_duplicate_temp.add_modificator({ base_object::mod_duplicate, int(entry_index.id) });
+
+		model_duplicate_temp.set_object_id(last_id);
+
+		model_vector.push_back(model_duplicate_temp);
+
+		last_id++; //Up the ID after adding the object.
+
+		model_temp->add_modificator({ base_object::mod_duplicated,int(last_id)});
+	}
+					break;
+	}
 
 	reload_gui_list();
 }

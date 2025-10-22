@@ -145,6 +145,7 @@
     <ClInclude Include="material_plus.h" />
     <ClInclude Include="mesh_object.h" />
     <ClInclude Include="model_object.h" />
+    <ClInclude Include="model_plus.h" />
     <ClInclude Include="modificator_object.h" />
     <ClInclude Include="objects_database.h" />
   </ItemGroup>

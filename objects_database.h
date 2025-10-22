@@ -3,6 +3,7 @@
 #include "Bait.h"
 #include "mesh_object.h"
 #include "model_object.h"
+
 class objects_database
 {
 private:
@@ -54,13 +55,15 @@ public:
 	//Container add functions
 	void add_mesh_object(Mesh mesh_entry);
 
-	void add_model_object(Model model_entry);
+	void add_model_object(std::string path_in);
 
 	//Container delete
 	void remove_object(entry_object entry_index); //Removes objects using entry objects.
 
 	//Container duplicate.
 	void duplicate_object(entry_object entry_index); //Duplicates object
+
+
 
 	objects_database(); //Constructor.
 };
