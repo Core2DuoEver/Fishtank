@@ -1,0 +1,101 @@
+#
+# rgl layout text file (v4.0) - raygui layout file generated using rGuiLayout
+#
+# Number of controls:     88
+#
+# Ref. window:    r <x> <y> <width> <height>
+# Anchor info:    a <id> <name> <posx> <posy> <enabled>
+# Control info:   c <id> <type> <name> <rectangle> <anchor_id> <text>
+#
+r 0 40 -1 -1
+a 001 anchor01 24 456 1
+a 002 anchor02 384 456 1
+a 003 anchor03 920 504 1
+c 000 3 ProgramBG 0 0 768 432 0 
+c 001 3 DropDownBG -8 0 776 24 0 
+c 002 3 Panel017 576 0 192 24 0 
+c 003 5 HelpButton 744 0 24 24 0 ?
+c 004 3 Panel008 576 24 192 192 0 
+c 005 3 ToolsPanel 0 24 24 408 0 
+c 006 3 ObjectsListBG 576 216 192 216 0 
+c 007 8 ObjectToggle1 576 24 48 24 0 SAMPLE TEXT
+c 008 8 ObjectToggle2 624 24 48 24 0 SAMPLE TEXT
+c 009 8 ObjectToggle3 672 24 48 24 0 SAMPLE TEXT
+c 010 8 ObjectToggle4 720 24 48 24 0 SAMPLE TEXT
+c 011 3 ObjectsLabelBG 576 216 96 24 0 
+c 012 11 FilterDropdown 672 216 96 24 0 Filter; Meshe; Model; Entity
+c 013 4 ObjectsLabel 576 216 96 24 0 Objects
+c 014 21 ObjectList 576 240 192 192 0 No objects
+c 015 8 MeshToolToggle 0 24 24 24 0 M
+c 016 8 ModelToolToggle 0 48 24 24 0 .M
+c 017 8 EntityToolButton 0 72 24 24 0 E
+c 018 11 FileDropdown 0 0 96 24 0 File;Save;Load;Settings;Exit
+c 019 11 ModelDropdown 96 0 96 24 0 Model;Add model;Manage modelsl
+c 020 11 MaterialDropdown 192 0 96 24 0 Material;Add material;Manage materials
+c 021 11 Mapdropdown 288 0 96 24 0 Map; Edit map settings; Compile collisions; Export map
+c 022 11 RunDropdown 576 0 96 24 0 Run;  Run settings
+c 023 3 ObjectsPanelBG 792 48 192 168 0 
+c 024 3 MeshSettingsPanelBG 1008 48 192 168 0 
+c 025 3 BGPanelCollisions 1008 240 192 168 0 
+c 026 3 Panel027 1224 48 192 168 0 
+c 027 3 MaterialChangeBGPanel 1440 48 192 168 0 
+c 028 3 ModelShaderBG 1440 240 192 168 0 
+c 029 4 NameLabel 800 56 40 24 0 Name :
+c 030 12 NameTextBox 840 56 144 24 0 
+c 031 4 AngleLabel 808 144 32 24 0 Ang :
+c 032 6 XLabel 840 80 24 16 0 X
+c 033 6 YLabel 888 80 24 16 0 Y
+c 034 6 ZLabel 936 80 24 16 0 Z
+c 035 12 PositionXTextBox 840 96 48 24 0 
+c 036 12 PositionYTextBox 888 96 48 24 0 
+c 037 12 PositionZTextBox 936 96 48 24 0 
+c 038 12 ScaleXTextBox 840 120 48 24 0 
+c 039 12 ScaleYTextBox 888 120 48 24 0 
+c 040 12 ScaleZTextBox 936 120 48 24 0 
+c 041 12 AngleXTextBox 840 144 48 24 0 
+c 042 12 AngleYTextBox 888 144 48 24 0 
+c 043 12 AngleZTextBox 936 144 48 24 0 
+c 044 4 ScaleLabel 808 120 32 24 0 Scl :
+c 045 4 PositionLabel 808 96 32 24 0 Pos :
+c 046 4 ObjectIDLabel 808 176 80 12 0 Object ID :
+c 047 11 MeshTypeDropbox 1056 56 144 24 0 Poly
+c 048 4 MeshTypeLabel 1016 56 40 24 0 Mesh :
+c 049 4 FirstParamLabel 1024 96 32 24 0 1
+c 050 4 SecondParamLabel 1024 120 32 24 0 2
+c 051 12 ParamTextBox1 1056 96 144 24 0 
+c 052 12 Param2TextBox 1056 120 144 24 0 
+c 053 11 DropdownBox055 1056 168 144 24 0 No collision
+c 054 7 HideObjectRadioButton 960 168 24 24 0 
+c 055 4 HideLabel 936 176 32 12 0 Hide:
+c 056 5 AddLogicButton 1224 72 96 24 0 Add
+c 057 5 RemoveLogicButton 1320 72 96 24 0 Remove
+c 058 12 LogicTextBox 1224 48 192 24 0 
+c 059 21 LogicListView 1224 96 192 120 0 No logic
+c 060 3 MaterialPanel 1440 48 144 144 0 
+c 061 5 MaterialChangeButton 1440 192 192 24 0 Change material
+c 062 5 Rotate90Button 1584 48 48 24 0 R90
+c 063 5 MirrorHorButton 1584 96 48 24 0 MRH
+c 064 5 MirrorVerticalButton 1584 144 48 24 0 MRV
+c 065 4 Label067 1584 72 48 24 0 Rotate
+c 066 4 Label068 1584 120 48 24 0 Mirror
+c 067 5 CreateButtonCollisions 1032 272 144 24 0 Create collision mesh
+c 068 4 OrLabelModelCollision 1096 304 24 24 0 Or
+c 069 11 ColiderSettingsDropBox 1032 344 144 24 0 No collision; Collides; Walkable
+c 070 4 Label072 1040 328 128 12 0 Choose colider settings
+c 071 5 Button073 1032 232 144 24 0 Remove collision mesh
+c 072 11 ChooseShader 1440 240 192 24 0 
+c 073 11 ShaderSettingsDropdownBox 1440 288 96 24 0 
+c 074 12 1536 288 96 24 0 0 
+c 075 0 CreditsWindow 0 0 336 168 1 Credits
+c 076 6 MELabel 24 480 240 24 0 Program by : Core2DuoEver
+c 077 6 GithubLabelButton 24 504 240 24 0 https://github.com/Core2DuoEver/Fishtank
+c 078 4 OpensourceLabel 0 72 328 24 1 Opensource : Raylib, Raygui, ZIP, tinyfiledialogs, boost 
+c 079 0 WindowBox079 0 0 216 328 2 Help
+c 080 0 WindowBox080 456 24 120 408 0 SAMPLE TEXT
+c 081 23 DummyRec081 560 48 16 384 0 SAMPLE TEXT
+c 082 3 Panel082 456 48 104 104 0 
+c 083 3 Panel083 456 152 104 104 0 
+c 084 3 Panel084 456 256 104 104 0 
+c 085 3 Panel085 456 360 104 104 0 
+c 086 3 Panel086 768 0 120 24 0 
+c 087 3 Panel087 456 432 120 24 0 

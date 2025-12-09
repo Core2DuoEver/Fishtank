@@ -1,0 +1,156 @@
+﻿  base_object.cpp
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(7,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "base_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(8,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "base_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(10,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "base_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(11,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "base_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(12,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "base_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(14,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "base_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(17,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "base_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(17,10): error C1083: Не удается открыть файл включение: zip.h: No such file or directory,
+  (компиляция исходного файла "base_object.cpp")
+  
+  material_database.cpp
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(7,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(8,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(10,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(11,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(12,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(14,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(17,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(17,10): error C1083: Не удается открыть файл включение: zip.h: No such file or directory,
+  (компиляция исходного файла "material_database.cpp")
+  
+  mesh_object.cpp
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(7,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "mesh_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(8,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "mesh_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(10,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "mesh_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(11,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "mesh_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(12,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "mesh_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(14,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "mesh_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(17,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "mesh_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(17,10): error C1083: Не удается открыть файл включение: zip.h: No such file or directory,
+  (компиляция исходного файла "mesh_object.cpp")
+  
+  model_database.cpp
+C:\Users\user\Documents\GitHub\Fishtank\model_database.h(3,10): error C1083: Не удается открыть файл включение: raylib.h: No such file or directory,
+  (компиляция исходного файла "model_database.cpp")
+  
+  model_object.cpp
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(7,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "model_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(8,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "model_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(10,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "model_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(11,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "model_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(12,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "model_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(14,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "model_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(17,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "model_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(17,10): error C1083: Не удается открыть файл включение: zip.h: No such file or directory,
+  (компиляция исходного файла "model_object.cpp")
+  
+  new_main.cpp
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(7,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "new_main.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(8,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "new_main.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(10,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "new_main.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(11,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "new_main.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(12,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "new_main.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(14,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "new_main.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(17,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "new_main.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(17,10): error C1083: Не удается открыть файл включение: zip.h: No such file or directory,
+  (компиляция исходного файла "new_main.cpp")
+  
+  objects_database.cpp
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(7,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "objects_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(8,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "objects_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(10,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "objects_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(11,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "objects_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(12,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "objects_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(14,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "objects_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(17,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "objects_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(17,10): error C1083: Не удается открыть файл включение: zip.h: No such file or directory,
+  (компиляция исходного файла "objects_database.cpp")
+  
+  raygui_implementation.h
+  Создание кода...

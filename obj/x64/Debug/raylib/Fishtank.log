@@ -1,0 +1,132 @@
+﻿  Проверка источников на наличие зависимостей модуля…
+  base_object.cpp
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(26,21): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "base_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(27,18): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "base_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(30,17): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "base_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(31,45): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "base_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\base_object.h(73,27): warning C4267: return: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+  (компиляция исходного файла "base_object.cpp")
+  
+  material_database.cpp
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(26,21): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(27,18): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(30,17): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(31,45): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\material_database.cpp(17,37): warning C4267: return: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+C:\Users\user\Documents\GitHub\Fishtank\material_database.cpp(27,45): warning C4018: <: несоответствие типов со знаком и без знака
+  material_window.cpp
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(26,21): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_window.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(27,18): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_window.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(30,17): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_window.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(31,45): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "material_window.cpp")
+  
+  mesh_object.cpp
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(26,21): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "mesh_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(27,18): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "mesh_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(30,17): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "mesh_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(31,45): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "mesh_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\base_object.h(73,27): warning C4267: return: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+  (компиляция исходного файла "mesh_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\mesh_object.cpp(40,4): warning C4551: в вызове функции отсутствует список аргументов
+C:\Users\user\Documents\GitHub\Fishtank\mesh_object.cpp(87,4): warning C4551: в вызове функции отсутствует список аргументов
+C:\Users\user\Documents\GitHub\Fishtank\mesh_object.cpp(96,3): warning C4551: в вызове функции отсутствует список аргументов
+  model_object.cpp
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(26,21): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "model_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(27,18): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "model_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(30,17): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "model_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(31,45): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "model_object.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\base_object.h(73,27): warning C4267: return: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+  (компиляция исходного файла "model_object.cpp")
+  
+  new_main.cpp
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(26,21): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "new_main.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(27,18): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "new_main.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(30,17): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "new_main.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(31,45): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "new_main.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\base_object.h(73,27): warning C4267: return: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+  (компиляция исходного файла "new_main.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\new_main.cpp(12,20): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\user\Documents\GitHub\Fishtank\new_main.cpp(144,44): warning C4244: инициализация: преобразование "float" в "unsigned int", возможна потеря данных
+C:\Users\user\Documents\GitHub\Fishtank\new_main.cpp(725,180): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\Documents\GitHub\Fishtank\new_main.cpp(725,77): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\Documents\GitHub\Fishtank\new_main.cpp(993,87): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\Documents\GitHub\Fishtank\new_main.cpp(1065,21): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\Documents\GitHub\Fishtank\new_main.cpp(1069,59): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\user\Documents\GitHub\Fishtank\new_main.cpp(1279,98): warning C4244: =: преобразование "float" в "unsigned int", возможна потеря данных
+C:\Users\user\Documents\GitHub\Fishtank\new_main.cpp(1474,52): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\Documents\GitHub\Fishtank\new_main.cpp(1475,54): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\user\Documents\GitHub\Fishtank\new_main.cpp(1479,77): warning C4244: =: преобразование "float" в "unsigned int", возможна потеря данных
+  objects_database.cpp
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(26,21): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "objects_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(27,18): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "objects_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(30,17): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "objects_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\Bait.h(31,45): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  (компиляция исходного файла "objects_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\base_object.h(73,27): warning C4267: return: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+  (компиляция исходного файла "objects_database.cpp")
+  
+C:\Users\user\Documents\GitHub\Fishtank\objects_database.cpp(485,21): warning C4244: инициализация: преобразование "zip_int64_t" в "int", возможна потеря данных
+C:\Users\user\Documents\GitHub\Fishtank\objects_database.cpp(549,5): warning C4551: в вызове функции отсутствует список аргументов
+C:\Users\user\Documents\GitHub\Fishtank\objects_database.cpp(547,36): warning C4101: e: неиспользованная локальная переменная
+  Создание кода...
+C:\Users\user\Documents\GitHub\Fishtank\mesh_object.cpp(130,1): warning C4715: mesh_object::gen_mesh_model: значение возвращается не при всех путях выполнения
+C:\Users\user\Documents\GitHub\Fishtank\material_database.cpp(192,1): warning C4715: material_database::get_material_from_path: значение возвращается не при всех путях выполнения
+  Fishtank.vcxproj -> C:\Users\user\Documents\bin\Debug\Fishtank.exe
+  "pwsh.exe" не является внутренней или внешней
+  командой, исполняемой программой или пакетным файлом.

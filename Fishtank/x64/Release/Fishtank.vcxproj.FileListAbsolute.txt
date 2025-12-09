@@ -1,0 +1,5 @@
+C:\Users\user\Documents\GitHub\Fishtank\x64\Release\boost_filesystem-vc143-mt-x64-1_86.dll
+C:\Users\user\Documents\GitHub\Fishtank\x64\Release\zip.dll
+C:\Users\user\Documents\GitHub\Fishtank\x64\Release\bz2.dll
+C:\Users\user\Documents\GitHub\Fishtank\x64\Release\zlib1.dll
+C:\Users\user\Documents\GitHub\Fishtank\Fishtank\x64\Release\Fishtank.vcxproj.Up2Date

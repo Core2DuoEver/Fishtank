@@ -1,13 +1,15 @@
 #pragma once
 
-#include "bait.h"
-
-class material_plus
+#include "Bait.h"
+//Meant for loading
+class material_show_plus 
 {
 	public:
-		Material mat_main{};
-		std::string mat_path{};
-		std::string mat_name{};
-		Texture mat_preview{};
+//		std::vector<Image> mat_maps{}; //Images are loaded into the memory first, then in textures.
+//		float mat_params[4]{}; //Params yes.
+		std::string mat_path{}; //Material path
+//		std::string mat_name{};
+//		Image mat_preview{}; //Material preview.
 };
+
 

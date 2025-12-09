@@ -33,11 +33,17 @@
     <ClCompile Include="objects_database.cpp">
       <Filter>Файлы заголовков\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="modificator_object.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="base_object.cpp">
       <Filter>Файлы заголовков\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="model_database.cpp">
+      <Filter>Файлы заголовков\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="raygui_implementation.h">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="material_window.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -68,10 +74,13 @@
     <ClInclude Include="base_object.h">
       <Filter>Файлы заголовков\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="modificator_object.h">
+    <ClInclude Include="model_plus.h">
       <Filter>Файлы заголовков\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="model_plus.h">
+    <ClInclude Include="model_database.h">
+      <Filter>Файлы заголовков\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="material_window.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

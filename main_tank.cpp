@@ -455,7 +455,7 @@ std::vector<Texture2D> mat_materials;
                                  ImageFlipVertical(&to_flip);
 
                                  SetMaterialTexture(&newone.mat, ind, LoadTextureFromImage(to_flip));
-
+                                 
                                  UnloadImage(to_flip);
 
                              }
@@ -1636,11 +1636,11 @@ int notmain() {
            
            
             materialcreate = !GuiWindowBox({ 256,40,440,400 }, "Material creation");
-
+            //
             GuiPanel({ 262,72,200,200 }, NULL);
-
+            //
             DrawTexturePro(mat_materials[chosen_map], { 0,0,float(mat_materials[chosen_map].width),float(mat_materials[chosen_map].height) }, { 262,72,200,200 }, { 0,0, }, 0, WHITE);
-
+            //
             if (GuiDropdownBox({ 262,272,120,20 }, "Albedo;Metalness;Normal;Roughness;Occlusion;Emission;Heightmap;Cubemap;Irrdaiance;Prefilter;Brdf", &chosen_map, mat_map_bool)) {
                 mat_map_bool = !mat_map_bool;
             }
